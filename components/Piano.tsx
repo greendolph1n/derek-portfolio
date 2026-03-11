@@ -2,60 +2,40 @@ export default function Piano() {
   return (
     <section id="piano" className="mx-auto max-w-5xl px-6 py-24">
       <div className="mb-12">
-        <p className="mb-3 text-sm text-neutral-500">Beyond Engineering</p>
         <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-          Piano and creative work.
+          Beyond engineering.
         </h2>
       </div>
 
-      <div className="rounded-[28px] border border-black/10 bg-white p-8 sm:p-10">
-        <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-start">
-          <div>
-            <h3 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-              Piano Performance & Improvisation
-            </h3>
-
-            <p className="mt-5 max-w-2xl text-base leading-8 text-neutral-600">
-              Outside of software, I’m also a pianist with a strong focus on
-              improvisation, expression, and musical interpretation. Piano has
-              been one of the most consistent creative disciplines in my life,
-              and it continues to shape how I think about refinement, patience,
-              and long-term growth.
+      <div className="group rounded-[28px] border border-black/10 bg-white p-8 transition duration-300 hover:-translate-y-1 hover:border-black/20 hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)]">
+        <div className="grid gap-10 md:grid-cols-[1fr_0.9fr] md:items-center">
+          <div className="max-w-lg">
+            <p className="text-lg font-medium text-neutral-700">
+              Piano performance and improvisation.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-2">
-              {["Piano", "Improvisation", "Performance", "Creative Work"].map(
-                (tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full border border-black/10 px-3 py-1 text-xs text-neutral-700"
-                  >
-                    {tag}
-                  </span>
-                )
-              )}
-            </div>
+            <p className="mt-6 text-base leading-8 text-neutral-600">
+              Outside of software, I’m also a pianist with a strong focus on
+              improvisation and expression. Music has long been one of my most
+              meaningful creative outlets, and it continues to shape the way I
+              think about discipline, refinement, and artistry.
+            </p>
           </div>
 
-          <div className="rounded-2xl border border-black/10 bg-neutral-50 p-6">
-            <p className="text-sm text-neutral-500">Featured Clip</p>
-
-            <h4 className="mt-2 text-lg font-semibold tracking-tight">
-              Instagram Performance
-            </h4>
-
-            <p className="mt-3 text-sm leading-7 text-neutral-600">
-              A short performance clip from my piano page.
-            </p>
-
-            <a
-              href="https://www.instagram.com/p/DD0lsxBpyy7/"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-6 inline-flex rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white transition hover:opacity-85"
-            >
-              View on Instagram
-            </a>
+          <div className="flex justify-center md:justify-end">
+            <div className="w-[240px] rounded-[32px] border border-black/10 bg-neutral-100 p-3 shadow-sm transition duration-300 group-hover:border-black/20">
+              <div className="overflow-hidden rounded-[24px] bg-black">
+                <video
+                  className="block h-auto w-full transition duration-500 group-hover:scale-[1.01]"
+                  controls
+                  preload="metadata"
+                  playsInline
+                  poster="/piano-poster.png"
+                >
+                  <source src="/piano.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
           </div>
         </div>
       </div>

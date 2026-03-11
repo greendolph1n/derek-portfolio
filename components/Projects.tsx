@@ -9,7 +9,7 @@ const projects = [
     demo: "https://www.youtube.com/watch?v=exWLhkqOrlg",
   },
   {
-    title: "CryptoTrader",
+    title: "Crypto Trading System",
     description:
       "An automated cryptocurrency trading system built during a hackathon. The platform analyzes market data and executes trades using algorithmic strategies while providing a real-time dashboard for monitoring performance.",
     tags: ["Python", "APIs", "Algorithmic Trading", "Finance"],
@@ -20,11 +20,12 @@ const projects = [
       "https://devpost.com/software/cryptotrader-4t8z5a?ref_content=user-portfolio&ref_feature=in_progress",
   },
   {
-    title: "HobbyFinder",
+    title: "Hobby Finder",
     description:
       "A web application that connects users based on shared interests and recommends new hobbies using machine learning. Implemented a K-means clustering model to analyze user preferences and generate personalized hobby suggestions.",
     tags: ["React", "Bootstrap", "Machine Learning", "Firestore"],
     github: "https://github.com/minericpark/hobbyapp",
+    image: "/hobbyfinder-preview-3.png",
   },
 ];
 
@@ -35,17 +36,17 @@ export default function Projects() {
   return (
     <section id="projects" className="mx-auto max-w-5xl px-6 py-24">
       <div className="mb-12">
-        <p className="mb-3 text-sm text-neutral-500">Selected Work</p>
+        <p className="mb-3 text-sm text-neutral-500">Selected work</p>
         <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-          Projects and technical work.
+          Technical projects.
         </h2>
       </div>
 
       <div className="space-y-6">
-        <div className="rounded-[28px] border border-black/10 bg-white p-8 sm:p-10">
+        <div className="group rounded-[28px] border border-black/10 bg-white p-8 sm:p-10 transition duration-300 hover:border-black/20 hover:shadow-[0_12px_40px_rgba(0,0,0,0.06)]">
           <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
             <div className="max-w-3xl">
-              <p className="mb-3 text-sm text-neutral-500">Featured Project</p>
+              <p className="mb-3 text-sm text-neutral-500">Featured project</p>
               <h3 className="text-3xl font-semibold tracking-tight sm:text-4xl">
                 {featuredProject.title}
               </h3>
@@ -57,7 +58,7 @@ export default function Projects() {
                   href={featuredProject.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="underline underline-offset-4 transition hover:text-black"
+                  className="text-neutral-600 underline underline-offset-4 transition hover:text-black"
                 >
                   GitHub
                 </a>
@@ -68,7 +69,7 @@ export default function Projects() {
                   href={featuredProject.demo}
                   target="_blank"
                   rel="noreferrer"
-                  className="underline underline-offset-4 transition hover:text-black"
+                  className="text-neutral-600 underline underline-offset-4 transition hover:text-black"
                 >
                   Demo
                 </a>
@@ -77,12 +78,12 @@ export default function Projects() {
           </div>
 
           {featuredProject.video && (
-            <div className="mb-8 overflow-hidden rounded-2xl border border-black/10">
+            <div className="mb-8 overflow-hidden rounded-2xl border border-black/10 transition duration-300 group-hover:border-black/20">
               <div className="aspect-video w-full">
                 <iframe
                   src={featuredProject.video}
                   title={featuredProject.title}
-                  className="h-full w-full"
+                  className="h-full w-full transition duration-500 group-hover:scale-[1.01]"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />
@@ -108,27 +109,37 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid items-stretch gap-6 md:grid-cols-2">
           {otherProjects.map((project) => (
             <div
               key={project.title}
-              className="rounded-[28px] border border-black/10 bg-white p-8 transition-shadow hover:shadow-md"
+              className="group h-full rounded-[28px] border border-black/10 bg-white p-8 transition duration-300 hover:-translate-y-1 hover:border-black/20 hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)]"
             >
               <h3 className="text-2xl font-semibold tracking-tight">
                 {project.title}
               </h3>
 
               {project.video && (
-                <div className="mt-5 overflow-hidden rounded-2xl border border-black/10">
+                <div className="mt-5 overflow-hidden rounded-2xl border border-black/10 transition duration-300 group-hover:border-black/20">
                   <div className="aspect-video w-full">
                     <iframe
                       src={project.video}
                       title={project.title}
-                      className="h-full w-full"
+                      className="h-full w-full transition duration-500 group-hover:scale-[1.01]"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                     />
                   </div>
+                </div>
+              )}
+
+              {project.image && (
+                <div className="mt-6 overflow-hidden rounded-2xl border border-black/10 transition duration-300 group-hover:border-black/20">
+                  <img
+                    src={project.image}
+                    className="w-full transition duration-500 group-hover:scale-[1.01]"
+                    alt={`${project.title} preview`}
+                  />
                 </div>
               )}
 
@@ -143,7 +154,7 @@ export default function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noreferrer"
-                      className="underline underline-offset-4 hover:text-black"
+                      className="text-neutral-600 underline underline-offset-4 transition hover:text-black"
                     >
                       GitHub
                     </a>
@@ -154,7 +165,7 @@ export default function Projects() {
                       href={project.demo}
                       target="_blank"
                       rel="noreferrer"
-                      className="underline underline-offset-4 hover:text-black"
+                      className="text-neutral-600 underline underline-offset-4 transition hover:text-black"
                     >
                       Demo
                     </a>
@@ -165,7 +176,7 @@ export default function Projects() {
                       href={project.devpost}
                       target="_blank"
                       rel="noreferrer"
-                      className="underline underline-offset-4 hover:text-black"
+                      className="text-neutral-600 underline underline-offset-4 transition hover:text-black"
                     >
                       Devpost
                     </a>
@@ -185,7 +196,7 @@ export default function Projects() {
               </div>
             </div>
           ))}
-        </div> 
+        </div>
       </div>
     </section>
   );

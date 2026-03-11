@@ -10,9 +10,11 @@ export default function Navbar() {
           <a href="#projects" className="transition hover:text-black">
             Projects
           </a>
-          <a href="#experience" className="transition hover:text-black">
-            Experience
-          </a>
+          <a href="/serrano_resume_2026.pdf" className="transition hover:text-black"
+             
+         >
+              Resume
+            </a>
           <a href="#contact" className="transition hover:text-black">
             Contact
           </a>

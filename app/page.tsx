@@ -1,30 +1,42 @@
+import Navbar from "@/components/Navbar";
+
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-black text-white flex items-center justify-center overflow-hidden">
+    <main className="min-h-screen bg-white text-black">
+      <Navbar />
 
-      <div className="absolute w-[600px] h-[600px] bg-purple-500/20 blur-[120px] rounded-full"></div>
+      <section className="mx-auto max-w-5xl px-6 py-24">
+        <div className="max-w-3xl">
+          <p className="mb-4 text-sm text-neutral-500">Software Developer</p>
 
-      <div className="relative max-w-3xl px-6 text-center">
-        <h1 className="text-6xl font-bold mb-6">
-          Derek Serrano
-        </h1>
+          <h1 className="text-5xl font-semibold tracking-tight sm:text-7xl">
+            Building thoughtful software with a focus on backend systems and clean user experiences.
+          </h1>
 
-        <p className="text-xl text-neutral-400 mb-8">
-          Software developer building scalable backend systems and
-          thoughtful digital experiences.
-        </p>
+          <p className="mt-8 max-w-2xl text-lg leading-8 text-neutral-600">
+            I’m Derek Serrano, a software developer with experience working on
+            Java Spring Boot services and modern web applications. I care about
+            building reliable systems, writing clean code, and growing into a
+            stronger engineer over time.
+          </p>
 
-        <div className="flex justify-center gap-4">
-          <button className="px-6 py-3 bg-white text-black rounded-lg font-medium hover:bg-neutral-200 transition">
-            View Projects
-          </button>
+          <div className="mt-10 flex gap-4">
+            <a
+              href="#projects"
+              className="rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition hover:opacity-85"
+            >
+              View Projects
+            </a>
 
-          <button className="px-6 py-3 border border-neutral-700 rounded-lg hover:border-neutral-400 transition">
-            Contact
-          </button>
+            <a
+              href="#contact"
+              className="rounded-full border border-black/15 px-6 py-3 text-sm font-medium text-black transition hover:bg-black/5"
+            >
+              Contact
+            </a>
+          </div>
         </div>
-      </div>
-
+      </section>
     </main>
   );
 }

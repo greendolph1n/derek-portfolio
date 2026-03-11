@@ -1,4 +1,8 @@
+import Contact from "@/components/Contact";
+import Experience from "@/components/Experience";
 import Navbar from "@/components/Navbar";
+import Projects from "@/components/Projects";
+import Piano from "@/components/Piano";
 
 export default function Home() {
   return (
@@ -10,14 +14,15 @@ export default function Home() {
           <p className="mb-4 text-sm text-neutral-500">Software Developer</p>
 
           <h1 className="text-5xl font-semibold tracking-tight sm:text-7xl">
-            Building thoughtful software with a focus on backend systems and clean user experiences.
+            Building thoughtful software with a focus on backend systems and
+            clean user experiences.
           </h1>
 
           <p className="mt-8 max-w-2xl text-lg leading-8 text-neutral-600">
-            I’m Derek Serrano, a software developer with experience working on
-            Java Spring Boot services and modern web applications. I care about
-            building reliable systems, writing clean code, and growing into a
-            stronger engineer over time.
+            I&apos;m Derek Serrano, a software developer with experience working
+            on Java Spring Boot services and modern web applications. I care
+            about building reliable systems, writing clean code, and growing
+            into a stronger engineer over time.
           </p>
 
           <div className="mt-10 flex gap-4">
@@ -37,6 +42,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Projects />
+      <Experience />
+      <Piano />
+      <Contact />
     </main>
   );
 }

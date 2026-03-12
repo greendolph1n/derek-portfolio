@@ -8,8 +8,6 @@ https://derekserrano.dev
 
 Personal portfolio website built with **Next.js**, **TypeScript**, and **Tailwind CSS**.
 
-<img width="1223" height="723" alt="image" src="https://github.com/user-attachments/assets/8c23799d-d91c-48be-90b4-c504819fea4f" />
-
 
 ## Tech Stack
 

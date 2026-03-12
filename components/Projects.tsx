@@ -20,12 +20,10 @@ const projects = [
       "https://devpost.com/software/cryptotrader-4t8z5a?ref_content=user-portfolio&ref_feature=in_progress",
   },
   {
-    title: "Hobby Finder",
+    title: "Distributed Rate Limiter",
     description:
-      "A web application that connects users based on shared interests and recommends new hobbies using machine learning. Implemented a K-means clustering model to analyze user preferences and generate personalized hobby suggestions.",
-    tags: ["React", "Bootstrap", "Machine Learning", "Firestore"],
-    github: "https://github.com/minericpark/hobbyapp",
-    image: "/hobbyfinder-preview-3.png",
+      "A distributed rate-limiting service designed to coordinate request throttling across multiple nodes. Implements token bucket algorithms and explores backend infrastructure concepts such as consistency, concurrency, and scalable request control.",
+    tags: ["Distributed Systems", "Rate Limiting", "Token Bucket", "Concurrency", "Backend Infrastructure"],    github: "https://github.com/greendolph1n/distributed-rate-limiter",
   },
 ];
 

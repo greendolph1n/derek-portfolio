@@ -8,6 +8,9 @@ https://derekserrano.dev
 
 Personal portfolio website built with **Next.js**, **TypeScript**, and **Tailwind CSS**.
 
+<img width="1223" height="723" alt="image" src="https://github.com/user-attachments/assets/8c23799d-d91c-48be-90b4-c504819fea4f" />
+
+
 ## Tech Stack
 
 - Next.js
@@ -24,7 +27,16 @@ Personal portfolio website built with **Next.js**, **TypeScript**, and **Tailwin
 
 ## Development
 
+Install dependencies:
+
+```bash
+npm install
+```
 Run locally:
 
 ```bash
 npm run dev
+```
+Deployment
+
+The site is deployed with Vercel and automatically redeploys on every push to main.

@@ -22,21 +22,23 @@ export default function Home() {
           </p>
 
           <div className="mt-12 flex gap-4">
-<a
-  href="#projects"
-  className="flex items-center gap-1 rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition duration-200 hover:-translate-y-[1px] hover:shadow-md active:translate-y-0"
->
-  View Projects
-</a>
+            <a
+              href="#projects"
+              className="flex items-center gap-1 rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition duration-200 hover:-translate-y-[1px] hover:shadow-md active:translate-y-0"
+            >
+              View Projects
+            </a>
             <a
               href="/serrano_resume_2026.pdf"
               target="_blank"
               rel="noreferrer"
-  className="flex items-center gap-1 rounded-full border border-black/15 px-6 py-3 text-sm font-medium text-black transition duration-200 hover:-translate-y-[1px] hover:bg-black/5 hover:shadow-sm"
+              className="flex items-center gap-1 rounded-full border border-black/15 px-6 py-3 text-sm font-medium text-black transition duration-200 hover:-translate-y-[1px] hover:bg-black/5 hover:shadow-sm"
             >
               Resume
             </a>
           </div>
+          <div className="mt-20 h-px w-full bg-black/5" />
+          
         </div>
       </section>
       <Projects />

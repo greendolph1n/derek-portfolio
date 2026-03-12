@@ -3,8 +3,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/greendolph1n/derek-portfolio?style=flat-square)](https://github.com/greendolph1n/derek-portfolio/commits/main)
 [![Repo Size](https://img.shields.io/github/repo-size/greendolph1n/derek-portfolio?style=flat-square)](https://github.com/greendolph1n/derek-portfolio)
 
-https://derekserrano.dev
-
+🌐 Live: https://derekserrano.dev
 
 Personal portfolio website built with **Next.js**, **TypeScript**, and **Tailwind CSS**.
 

@@ -22,7 +22,6 @@ Personal portfolio website built with **Next.js**, **TypeScript**, and **Tailwin
 
 - Modern responsive design
 - Project showcase
-- Experience section
 - Contact links
 
 ## Development

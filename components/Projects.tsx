@@ -23,8 +23,15 @@ const projects = [
     title: "Distributed Rate Limiter",
     description:
       "A distributed rate-limiting service designed to coordinate request throttling across multiple nodes. Implements token bucket algorithms and explores backend infrastructure concepts such as consistency, concurrency, and scalable request control.",
-    tags: ["Distributed Systems", "Rate Limiting", "Token Bucket", "Concurrency", "Backend Infrastructure"],    github: "https://github.com/greendolph1n/distributed-rate-limiter",
-    image: "/ratelimiter-preview-2.png",
+    tags: [
+      "Distributed Systems",
+      "Rate Limiting",
+      "Token Bucket",
+      "Concurrency",
+      "Backend Infrastructure",
+    ],
+    github: "https://github.com/greendolph1n/distributed-rate-limiter",
+    image: "/ratelimiter-preview.png",
     demo: "https://limiter.derekserrano.dev",
   },
 ];
@@ -142,7 +149,6 @@ export default function Projects() {
                   />
                 </div>
               )}
-            
 
               <p className="mt-5 max-w-xl text-sm leading-6 text-neutral-600">
                 {project.description}
@@ -161,16 +167,16 @@ export default function Projects() {
                     </a>
                   )}
 
-{project.demo && (
-  <a
-    href={project.demo}
-    target="_blank"
-    rel="noreferrer"
-    className="text-neutral-600 underline underline-offset-4 transition hover:text-black"
-  >
-    Demo
-  </a>
-)}
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-neutral-600 underline underline-offset-4 transition hover:text-black"
+                    >
+                      Demo
+                    </a>
+                  )}
 
                   {project.devpost && (
                     <a
@@ -190,11 +196,9 @@ export default function Projects() {
                   <span
                     key={tag}
                     className="rounded-full border border-black/10 px-3 py-1 text-xs text-neutral-700"
-                    
                   >
                     {tag}
                   </span>
-                  
                 ))}
               </div>
             </div>

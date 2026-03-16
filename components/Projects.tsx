@@ -139,16 +139,18 @@ export default function Projects() {
                   </div>
                 </div>
               )}
+<a href={project.image} target="_blank">
 
-              {project.image && (
-                <div className="mt-6 overflow-hidden rounded-2xl border border-black/10 transition duration-300 group-hover:border-black/20">
-                  <img
-                    src={project.image}
-                    className="w-full transition duration-500 group-hover:scale-[1.01]"
-                    alt={`${project.title} preview`}
-                  />
-                </div>
-              )}
+{project.image && (
+  <div className="mt-5 min-h-[260px] overflow-hidden rounded-2xl border border-black/10 transition duration-300 group-hover:border-black/20">
+    <img
+      src={project.image}
+      className="w-full h-full object-contain transition duration-500 group-hover:scale-[1.01]"
+      alt={`${project.title} preview`}
+    />
+  </div>
+)}
+</a>
 
               <p className="mt-5 max-w-xl text-sm leading-6 text-neutral-600">
                 {project.description}
